@@ -1,24 +1,24 @@
 <resources>
     <string name="app_name">List of birds</string>
     <string-array name="bird_names">
-        <item>Alauda arvensis</item>
-        <item>Anthus trivialis</item>
-        <item>Bombycilla garrulus</item>
-        <item>Bubo bubo</item>
-        <item>Carduelis carduelis</item>
-        <item>Ciconiidae</item>
-        <item>Erithacus rubecula</item>
-        <item>Falco subbuteo</item>
-        <item>Falco vespertinus</item>
-        <item>Ficedula hypoleuca</item>
-        <item>Gallinago gallinago</item>
-        <item>Haliaeetus albicilla</item>
-        <item>Luscinia svecica</item>
-        <item>Lyrurus tetrix</item>
-        <item>Passer domesticus</item>
-        <item>Parus cristatus</item>
-        <item>Phoenicurus phoenicurus</item>
-        <item>Phylloscopus collybita</item>
-        <item>Oriolus oriolus</item>
+        <item>Eurasian skylark</item>
+        <item>Tree pipit</item>
+        <item>Bohemian waxwing</item>
+        <item>Eurasian eagle-owl</item>
+        <item>European goldfinch</item>
+        <item>White stork</item>
+        <item>European robin</item>
+        <item>Eurasian hobby</item>
+        <item>Red-footed falcon</item>
+        <item>European pied flycatcher</item>
+        <item>Common snipe</item>
+        <item>White-tailed eagle</item>
+        <item>Bluethroat</item>
+        <item>Black grouse</item>
+        <item>House sparrow</item>
+        <item>Crested tit</item>
+        <item>Common redstart</item>
+        <item>Common chiffchaff</item>
+        <item>Eurasian golden oriole</item>
     </string-array>
 </resources>
