@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Список птиц</string>
+    <string-array name="bird_names">
+        <item>Жаворонок полевой</item>
+        <item>Лесной конек</item>
+        <item>Свиристель</item>
+        <item>Филин</item>
+        <item>Щегол</item>
+        <item>Аист белый</item>
+        <item>Зарянка</item>
+        <item>Чеглок</item>
+        <item>Кобчик</item>
+        <item>Мухоловка-пеструшка</item>
+        <item>Бекас</item>
+        <item>Орлан-белохвост</item>
+        <item>Варакушка</item>
+        <item>Тетерев</item>
+        <item>Хохлатая синица</item>
+        <item>Домовой воробей</item>
+        <item>Горихвостка обыкновенная</item>
+        <item>Пеночка-теньковка</item>
+        <item>Иволгка обыкновенная</item>
+    </string-array>
+</resources>

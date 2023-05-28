@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">List of birds</string>
+    <string-array name="bird_names">
+        <item>Alauda arvensis</item>
+        <item>Anthus trivialis</item>
+        <item>Bombycilla garrulus</item>
+        <item>Bubo bubo</item>
+        <item>Carduelis carduelis</item>
+        <item>Ciconiidae</item>
+        <item>Erithacus rubecula</item>
+        <item>Falco subbuteo</item>
+        <item>Falco vespertinus</item>
+        <item>Ficedula hypoleuca</item>
+        <item>Gallinago gallinago</item>
+        <item>Haliaeetus albicilla</item>
+        <item>Luscinia svecica</item>
+        <item>Lyrurus tetrix</item>
+        <item>Passer domesticus</item>
+        <item>Parus cristatus</item>
+        <item>Phoenicurus phoenicurus</item>
+        <item>Phylloscopus collybita</item>
+        <item>Oriolus oriolus</item>
+    </string-array>
 </resources>
