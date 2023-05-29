@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">List of birds</string>
-    <string-array name="bird_names">
+    <string-array name="birds_names">
         <item>Eurasian skylark</item>
         <item>Tree pipit</item>
         <item>Bohemian waxwing</item>
@@ -15,10 +15,31 @@
         <item>White-tailed eagle</item>
         <item>Bluethroat</item>
         <item>Black grouse</item>
-        <item>House sparrow</item>
+        <item>Eurasian golden oriole</item>
         <item>Crested tit</item>
+        <item>House sparrow</item>
         <item>Common redstart</item>
         <item>Common chiffchaff</item>
-        <item>Eurasian golden oriole</item>
+    </string-array>
+    <string-array name="birds_urls">
+        <item>https://en.wikipedia.org/wiki/Eurasian_skylark</item>
+        <item>https://en.wikipedia.org/wiki/Tree_pipit</item>
+        <item>https://en.wikipedia.org/wiki/Bohemian_waxwing</item>
+        <item>https://en.wikipedia.org/wiki/Eurasian_eagle-owl</item>
+        <item>https://en.wikipedia.org/wiki/European_goldfinch</item>
+        <item>https://en.wikipedia.org/wiki/White_stork</item>
+        <item>https://en.wikipedia.org/wiki/European_robin</item>
+        <item>https://en.wikipedia.org/wiki/Eurasian_hobby</item>
+        <item>https://en.wikipedia.org/wiki/Red-footed_falcon</item>
+        <item>https://en.wikipedia.org/wiki/European_pied_flycatcher</item>
+        <item>https://en.wikipedia.org/wiki/Common_snipe</item>
+        <item>https://en.wikipedia.org/wiki/White-tailed_eagle</item>
+        <item>https://en.wikipedia.org/wiki/Bluethroat</item>
+        <item>https://en.wikipedia.org/wiki/Black_grouse</item>
+        <item>https://en.wikipedia.org/wiki/Eurasian_golden_oriole</item>
+        <item>https://en.wikipedia.org/wiki/Crested_tit</item>
+        <item>https://en.wikipedia.org/wiki/House_sparrow</item>
+        <item>https://en.wikipedia.org/wiki/Common_redstart</item>
+        <item>https://en.wikipedia.org/wiki/Common_chiffchaff</item>
     </string-array>
 </resources>

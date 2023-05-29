@@ -42,7 +42,4 @@
         <item>phoenicurus_phoenicurus</item>
         <item>phylloscopus_collybita</item>
     </string-array>
-    <string-array name="birds_url">
-
-    </string-array>
 </resources>
