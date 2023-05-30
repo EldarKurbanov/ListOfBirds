@@ -45,5 +45,5 @@
     </string-array>
     <string name="button_previous" translatable="false">⏮️</string>
     <string name="button_next" translatable="false">⏭️</string>
-    <string name="button_help" translatable="false">🌐</string>
+    <string name="button_help" translatable="false">❓</string>
 </resources>
