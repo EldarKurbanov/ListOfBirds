@@ -21,25 +21,25 @@
         <item>@drawable/bird_phoenicurus_phoenicurus</item>
         <item>@drawable/bird_phylloscopus_collybita</item>
     </array>
-    <string-array name="birds_sounds">
-        <item>alauda_arvensis</item>
-        <item>anthus_trivialis</item>
-        <item>bombycilla_garrulus</item>
-        <item>bubo_bubo</item>
-        <item>carduelis_carduelis</item>
-        <item>ciconia_ciconia</item>
-        <item>erithacus_rubecula</item>
-        <item>falco_subbuteo</item>
-        <item>falco_vespertinus</item>
-        <item>ficedula_hypoleuca</item>
-        <item>gallinago_gallinago</item>
-        <item>haliaeetus_albicilla</item>
-        <item>luscinia_svecica</item>
-        <item>lyrurus_tetrix</item>
-        <item>oriolus_oriolus</item>
-        <item>parus_cristatus</item>
-        <item>passer_domesticus</item>
-        <item>phoenicurus_phoenicurus</item>
-        <item>phylloscopus_collybita</item>
-    </string-array>
+    <array name="birds_sounds">
+        <item>@raw/bird_alauda_arvensis</item>
+        <item>@raw/bird_anthus_trivialis</item>
+        <item>@raw/bird_bombycilla_garrulus</item>
+        <item>@raw/bird_bubo_bubo</item>
+        <item>@raw/bird_carduelis_carduelis</item>
+        <item>@raw/bird_ciconia_ciconia</item>
+        <item>@raw/bird_erithacus_rubecula</item>
+        <item>@raw/bird_falco_subbuteo</item>
+        <item>@raw/bird_falco_vespertinus</item>
+        <item>@raw/bird_ficedula_hypoleuca</item>
+        <item>@raw/bird_gallinago_gallinago</item>
+        <item>@raw/bird_haliaeetus_albicilla</item>
+        <item>@raw/bird_luscinia_svecica</item>
+        <item>@raw/bird_lyrurus_tetrix</item>
+        <item>@raw/bird_oriolus_oriolus</item>
+        <item>@raw/bird_parus_cristatus</item>
+        <item>@raw/bird_passer_domesticus</item>
+        <item>@raw/bird_phoenicurus_phoenicurus</item>
+        <item>@raw/bird_phylloscopus_collybita</item>
+    </array>
 </resources>

@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     TextView birdName;
 
     static int currentBird = 0;
+    static MediaPlayer currentSound;
     Bird[] birds;
 
     @Override
@@ -35,6 +37,12 @@ public class MainActivity extends AppCompatActivity {
         updateBird();
     }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+        currentSound.stop();
+    }
+
     Bird[] loadBirds() {
         if (birds != null) {
             return birds;
@@ -42,22 +50,23 @@ public class MainActivity extends AppCompatActivity {
 
         String[] birdsNames = getResources().getStringArray(R.array.birds_names);
         TypedArray birdsPictures = getResources().obtainTypedArray(R.array.birds_images);
-
+        TypedArray birdsSounds = getResources().obtainTypedArray(R.array.birds_sounds);
         String[] birdsURLs = getResources().getStringArray(R.array.birds_urls);
 
         birds = new Bird[birdsNames.length];
 
         for (int i = 0; i < birds.length; i++) {
-            birds[i] = new Bird(birdsNames[i], birdsURLs[i], null, birdsPictures.getResourceId(i, 0));
+            birds[i] = new Bird(birdsNames[i], birdsURLs[i], birdsSounds.getResourceId(i, 0), birdsPictures.getResourceId(i, 0));
         }
 
+        birdsSounds.recycle();
         birdsPictures.recycle();
 
         return birds;
     }
 
     public void onPictureClick(View view) {
-
+        currentSound.start();
     }
 
     public void onPreviousClick(View view) {
@@ -71,7 +80,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void updateBird() {
+        if (currentSound != null)
+            currentSound.stop();
+
         birdName.setText(birds[Math.abs(currentBird % birds.length)].name);
+        currentSound = MediaPlayer.create(this, birds[Math.abs(currentBird % birds.length)].sound);
         birdPicture.setImageResource(birds[Math.abs(currentBird % birds.length)].image);
     }
 
