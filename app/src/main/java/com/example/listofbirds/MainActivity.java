@@ -27,39 +27,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        birds = loadBirds();
-
         birdPicture = findViewById(R.id.bird_image);
         birdName = findViewById(R.id.bird_name);
 
+        birds = loadBirds();
+
         updateBird();
-    }
-
-    public void onPictureClick(View view) {
-
-    }
-
-    public void onPreviousClick(View view) {
-        currentBird--;
-        updateBird();
-    }
-
-    public void onNextClick(View view) {
-        currentBird++;
-        updateBird();
-    }
-
-    public void onHelpClick(View view) {
-        String url = birds[currentBird % birds.length].url;
-
-        Intent i = new Intent(Intent.ACTION_VIEW);
-        i.setData(Uri.parse(url));
-        startActivity(i);
-    }
-
-    void updateBird() {
-        birdName.setText(birds[currentBird % birds.length].name);
-        birdPicture.setImageResource(birds[currentBird % birds.length].image);
     }
 
     Bird[] loadBirds() {
@@ -81,5 +54,32 @@ public class MainActivity extends AppCompatActivity {
         birdsPictures.recycle();
 
         return birds;
+    }
+
+    public void onPictureClick(View view) {
+
+    }
+
+    public void onPreviousClick(View view) {
+        currentBird--;
+        updateBird();
+    }
+
+    public void onNextClick(View view) {
+        currentBird++;
+        updateBird();
+    }
+
+    void updateBird() {
+        birdName.setText(birds[Math.abs(currentBird % birds.length)].name);
+        birdPicture.setImageResource(birds[Math.abs(currentBird % birds.length)].image);
+    }
+
+    public void onHelpClick(View view) {
+        String url = birds[Math.abs(currentBird % birds.length)].url;
+
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
     }
 }
