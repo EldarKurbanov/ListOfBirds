@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <array name="birds_images">
+    <array name="birds_pictures">
         <item>@drawable/bird_alauda_arvensis</item>
         <item>@drawable/bird_anthus_trivialis</item>
         <item>@drawable/bird_bombycilla_garrulus</item>

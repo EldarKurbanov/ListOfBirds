@@ -12,7 +12,7 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/bird_image"
+            android:id="@+id/pic"
             android:layout_width="0dp"
             android:layout_height="400dp"
             android:layout_margin="30dp"
@@ -25,7 +25,7 @@
             app:srcCompat="@android:color/transparent" />
 
         <TextView
-            android:id="@+id/bird_name"
+            android:id="@+id/name"
             android:layout_width="200dp"
             android:layout_height="75dp"
             android:layout_marginTop="50dp"
@@ -35,10 +35,10 @@
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/bird_image" />
+            app:layout_constraintTop_toBottomOf="@+id/pic" />
 
         <Button
-            android:id="@+id/previous"
+            android:id="@+id/prev"
             android:layout_width="wrap_content"
             android:layout_height="75dp"
             android:layout_marginTop="50dp"
@@ -46,9 +46,10 @@
             android:onClick="onPreviousClick"
             android:text="@string/button_previous"
             android:textColor="#424242"
-            app:layout_constraintEnd_toStartOf="@+id/bird_name"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toStartOf="@+id/name"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/bird_image" />
+            app:layout_constraintTop_toBottomOf="@+id/pic" />
 
         <Button
             android:id="@+id/next"
@@ -59,24 +60,26 @@
             android:onClick="onNextClick"
             android:text="@string/button_next"
             android:textColor="#424242"
+            android:textSize="34sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/bird_name"
-            app:layout_constraintTop_toBottomOf="@+id/bird_image" />
+            app:layout_constraintStart_toEndOf="@+id/name"
+            app:layout_constraintTop_toBottomOf="@+id/pic" />
 
         <Button
-            android:id="@+id/help"
+            android:id="@+id/info"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:layout_marginBottom="50dp"
             android:background="?android:attr/selectableItemBackground"
-            android:onClick="onHelpClick"
+            android:onClick="onInfoClick"
             android:text="@string/button_help"
             android:textColor="#0277BD"
+            android:textSize="34sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/next"
-            app:layout_constraintStart_toEndOf="@+id/previous"
-            app:layout_constraintTop_toBottomOf="@+id/bird_name" />
+            app:layout_constraintStart_toEndOf="@+id/prev"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
